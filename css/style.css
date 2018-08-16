@@ -1,0 +1,140 @@
+#page-wrapper {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 251px;
+}
+
+#navbarSupportedContent {
+  width: 351px;
+}
+
+#dateHolder {
+  color: #ffff;
+  margin: 0 auto;
+}
+
+.holder-container {
+  position: relative;
+}
+
+.holder{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.holder.visible {
+  visibility: visible;
+  z-index: 1;
+}
+
+.load_iframe {
+  display: inline !important;
+}
+
+#main, #zimbraHolder,
+#ciscoHolder, #linuxHolder,
+#supportHolder, #biblioHolder,
+#dashboardHolder, #morpheusHolder,
+#service1Holder, #service2Holder
+{
+  margin-top: 65px;
+}
+
+
+#user_welcome {
+    color: #fff;
+}
+
+#welcome {
+    font-family: cursive;
+    margin-top: 20px;
+}
+
+/*****************************************************************************************************************************************************/
+
+.main_sidebar {
+    margin-top: 50px;
+    min-height:100vh;
+    position:fixed;
+    top:230;
+    left:0;
+    width:250px;
+    transition: all 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    will-change: left, width;
+    box-shadow: inset -1px 0 10px rgba(0, 0, 0, 0.4);
+    background: #293749;
+}
+
+.main_sidebar > ul {
+  margin-top: 50px;
+}
+
+.main_sidebar:after {
+    content: '';
+    background-color: #253238;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 58px;
+}
+.main_sidebar ul {
+    list-style:none;
+    padding-left:58px;
+}
+.main_sidebar ul li {
+    padding:10px;
+}
+.main_sidebar ul li.sub {
+    color:#fff;
+    display:block;
+    cursor: pointer;
+}
+.main_sidebar ul li img {
+    float:left;
+    color:grey;
+    margin-left:-58px;
+    font-size:24px;
+    padding-left:7px;
+}
+
+.main_sidebar ul li.sub:hover {
+    background:#167696;
+    /* cursor: pointer; */
+}
+
+.main_sidebar ul li.selected_item {
+    animation: blinker 4s linear infinite;
+    background:#b7750a33;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+.main_sidebar ul li a:hover {
+    color:#fff;
+    text-decoration:none;
+}
+.main_sidebar ul li:hover img {
+    color:#fff;
+}
+.main_sidebar ul li.active {
+    background:#0f4698;
+    color: #ffff !important;
+}
+.main_sidebar ul li.active img {
+    color:#fff;
+}
+.main_sidebar ul li.active:hover {
+    /*background:#167696;*/
+    /* cursor: none; */
+}
+.main_sidebar ul li.active:hover img {
+    color:#fff;
+}
