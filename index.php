@@ -144,7 +144,7 @@ else
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
         function startTime() {
             var today = new Date();
@@ -162,7 +162,7 @@ else
             return i;
         }
 
-    </script>
+    </script> -->
 
     <!-- Menu Toggle Script -->
     <script>
