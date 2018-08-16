@@ -1,3 +1,14 @@
+/* #logo {
+  margin-left: 29px;
+  max-height: 40px;
+  max-width: 220px;
+}
+
+#img_logo{
+  height: 30px;
+  width: 220px;
+} */
+
 #page-wrapper {
   display: inline-block;
   padding-left: 5px !important;
