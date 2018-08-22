@@ -2,35 +2,49 @@
 ( function( $ ) {
   $( document ).ready(function() {
 
-    $('#cssmenu > ul > li > a').click(function() {
+    $('#previous').click(function(){
+        window.history.back();
+    });
 
-      if($(this).parent("li").hasClass('active')){
-        $(this).parent("li").removeClass('active');
-      } else {
-        $(this).parent("li").addClass('active');
-      }
+    $('#forward').click(function(){
+        window.history.forward();
+    });
 
-      $(this).next('ul').slideToggle("slow");
+    $('.sidebar-submenu > a').click(function() {
 
+      //< First make all Iframe Holders not visible by removing the visible class
+      $('.holder').removeClass('visible');
+
+      //Make the Iframe Holder of the selected item visible
+      var target = $(this).attr("data-target-container");
+      $('#' + target).addClass('visible');
     });
   });
 } )( jQuery );
 
-$(function(){
 
-    $('.has-sub > ul > li').click(function(event){
+// Hide submenus
+$('#body-row .collapse').collapse('hide');
 
-        $('.has-sub > ul > li.selected_item').removeClass("selected_item");
-        $(this).addClass("selected_item");
-        $('.holder').removeClass('visible');
-        $('#' + $(this).children('a').attr('data-target-container')).addClass('visible');
-    });
+// Collapse/Expand icon
+// $('#collapse-icon').removeAttr('src');
 
-    $('#prev').click(function(){
-        window.history.back();
-    });
-
-    $('#forw').click(function(){
-        window.history.forward();
-    });
+// Collapse click
+$('[data-toggle=sidebar-colapse]').click(function() {
+    SidebarCollapse();
 });
+
+function SidebarCollapse () {
+    $('.menu-collapsed').toggleClass('d-none');
+    $('.sidebar-submenu').toggleClass('d-none');
+    $('.submenu-icon').toggleClass('d-none');
+    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+
+    // Treating d-flex/d-none on separators with title
+    var SeparatorTitle = $('.sidebar-separator-title');
+    if ( SeparatorTitle.hasClass('d-flex') ) {
+        SeparatorTitle.removeClass('d-flex');
+    } else {
+        SeparatorTitle.addClass('d-flex');
+    }
+}
