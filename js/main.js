@@ -2,6 +2,14 @@
 ( function( $ ) {
   $( document ).ready(function() {
 
+    $('.sidebar-submenu > .list-group-item').click(function(event){
+
+        $('.list-group-item').removeClass("selected_item");
+        $(this).addClass("selected_item");
+        // $('.holder').removeClass('visible');
+        // $('#' + $(this).children('a').attr('data-target-container')).addClass('visible');
+    });
+
     $('#previous').click(function(){
         window.history.back();
     });
@@ -24,7 +32,7 @@
 
 
 // Hide submenus
-$('#body-row .collapse').collapse('hide');
+$('#body-row .collapse').collapse('show');
 
 // Collapse/Expand icon
 // $('#collapse-icon').removeAttr('src');
@@ -32,6 +40,13 @@ $('#body-row .collapse').collapse('hide');
 // Collapse click
 $('[data-toggle=sidebar-colapse]').click(function() {
     SidebarCollapse();
+});
+
+$(".list-group-item-action").on('click', function(e){
+  if($("#sidebar-container").hasClass("sidebar-collapsed")){
+    e.preventDefault();
+    SidebarCollapse();
+  }
 });
 
 function SidebarCollapse () {

@@ -14,6 +14,22 @@
   padding-left: 0;
 }
 
+.sidebar-submenu > .list-group-item:hover {
+  background: #318ff573 !important;
+}
+
+.selected_item {
+    animation: blinker 4s linear infinite !important;
+    background: #b7750a33 !important;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+
 .list-group-item > div > img {
   margin-left: -10px;
 }
