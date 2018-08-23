@@ -183,21 +183,12 @@ else
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
 
-        function startTime() {
-            var today = new Date();
-            var h = today.getHours();
-            var m = today.getMinutes();
-            var s = today.getSeconds();
-            m = checkTime(m);
-            s = checkTime(s);
-            document.getElementById('date_day').innerHTML =
-            h + ":" + m + ":" + s;
-            var t = setTimeout(startTime, 500);
-        }
-        function checkTime(i) {
-            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-            return i;
-        }
+        $(document).ready(function() {
+            setInterval(function(){
+              document.getElementById("date_day").innerHTML = (new Date()).toLocaleTimeString();
+            }, 1000);
+        });
+
 
     </script>
   </body>
