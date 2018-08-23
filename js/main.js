@@ -44,7 +44,7 @@ $('[data-toggle=sidebar-colapse]').click(function() {
 
 $(".list-group-item-action").on('click', function(e){
   if($("#sidebar-container").hasClass("sidebar-collapsed")){
-    e.preventDefault();
+    e.stopPropagation();
     SidebarCollapse();
   }
 });
