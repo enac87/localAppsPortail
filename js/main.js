@@ -2,6 +2,10 @@
 ( function( $ ) {
   $( document ).ready(function() {
 
+    // $("#refresh").click(function(){
+    //   contentWindow.location.reload(true);
+    // });
+
     $('.sidebar-submenu > .list-group-item').click(function(event){
 
         $('.list-group-item').removeClass("selected_item");

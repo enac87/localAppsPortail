@@ -8,7 +8,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
 
-      <title>Projet Test</title>
+      <title>NUMERIUC</title>
 
       <!-- Bootstrap core CSS -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,13 +29,13 @@
 
         <div class="list-group-item d-flex align-items-center menu-collapsed" style="margin-left : 124px; padding : 0px; border : none; background-color:transparent">
             <span style="float: left; min-width: 50%; cursor: pointer;">
-                <button id="previous" type="button" class="nav-button btn btn-clear btn-icon"><i class="fa fa-arrow-left"></i></button>
+                <button id="previous" type="button" class="nav-button btn btn-clear btn-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVEhL7ZAxDgFBFIbnBBIXUAitSqEThQiFY2gUIlE4g0u5gFusQiGqZaN54xv5O4pN5lXsl/x5s/9OvsxMaPhhzGwUY2zr0wekO6SReVCVD7KtpAWjqzoPZBuSKEhPdR6I1m+l2Zn0VefBlVfJqCeoyK1mLmQgzSf8nJKHxFfGqU7Ye2R2pPkOm2YknfZOJqp9QDgnT8nHqn1AuJC8JEPVPiBckor326vyA3FLy4b/IIQXvCjuLA3NB10AAAAASUVORK5CYII="></button>
             </span>
             <span style="float: left; min-width: 50%; cursor: pointer;">
-                <button id="refresh" type="button" class="nav-button btn btn-clear btn-icon"><i class="fa fa-refresh"></i></button>
+                <button id="refresh" type="button" class="nav-button btn btn-clear btn-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVEhL3ZTPK4NxHMc34+bHjn7l4ncpBzu6qaUcpPwBhIOLWCkHuVIOQ5KjEic50EqJcnCXLTflxE3kIMPm9Xm8t7HneZTaae969fl+35/389522BMoL2Wz2ZZMJjMLB3AJF7CLPwZhxSwXxo/q6i+C1QS34I2zI86vkNbV7i8wz7GKuSivRxVusWyGGwVTMM6x3nbMIPc2iMG9MiewYWfU75QUi0AtXFuCucwIaeUS+xo4VPbDJvItXldgRZan2Ns3P4W773he7mJCjfAOSQKVsj3F3oqP4baIiCIFYc7ZRzKnZJVGFO6ruElWaUThGTzq+m/ZL4V2XQvCbIVeXf8lK9SvjcsqjSgcVXFMVmlE4Z4Voz5ZBbGc1jIvvCOtfUWsi1waUrJ+62cx5084hxmtPUW0jkzun+r9EmLhFDOfNRPQoLVL7DrhStlV2W6xzBVPQsLO6IlzHKJgRd0wjL/DdN50zDWG7zvFikcUHGRUMCfgwTwvsUvCkB7/WwQ7dHTE8yG8AViCbdjEW2BGmEHFykKBwBeZr0BWtrRspgAAAABJRU5ErkJggg=="></button>
             </span>
             <span style="min-width: 50%; cursor: pointer;">
-                <button id="forward" type="button" class="nav-button btn btn-clear btn-icon"><i class="fa fa-arrow-right"></i></button>
+                <button id="forward" type="button" class="nav-button btn btn-clear btn-icon"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACdSURBVEhL7ZE7CoNAEEA3hVfwCoHoFcRSU6e09VgewWvY5RySD9iEkNiMeStThiA4SRF98Fh2HF6xupUFISIhbvVqB9Eae9zryAaCCd7xibmObSCY/iL+wEzH72HhgFfsJtoPwPk5zkf/fg27xymye+P04RPuNDMPQiV6zviVaKTjeRAqxqTIBW2iHmIVthjryAb+1QYDva78H869ACHc8O2opYYbAAAAAElFTkSuQmCC"></button>
             </span>
         </div>
 
