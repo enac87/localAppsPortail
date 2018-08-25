@@ -28,10 +28,10 @@
       <a  id="logo" class="navbar-brand" href="index.php">Accueil</a>
 
         <div class="list-group-item d-flex align-items-center menu-collapsed" style="margin-left : 124px; padding : 0px; border : none; background-color:transparent">
-            <span style="float: left; min-width: 50%; cursor: pointer;">     
+            <span style="float: left; min-width: 50%; cursor: pointer;">
                 <button id="previous" type="button" class="nav-button btn btn-clear btn-icon"><i class="fa fa-arrow-left"></i></button>
             </span>
-            <span style="float: left; min-width: 50%; cursor: pointer;">     
+            <span style="float: left; min-width: 50%; cursor: pointer;">
                 <button id="refresh" type="button" class="nav-button btn btn-clear btn-icon"><i class="fa fa-refresh"></i></button>
             </span>
             <span style="min-width: 50%; cursor: pointer;">
@@ -64,13 +64,13 @@ else
             <!-- Bootstrap List Group -->
             <ul class="list-group">
                 <!-- Separator with title -->
-                
+
                 <!-- /END Separator -->
                 <!-- Etude & Formation -->
                 <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMTSURBVFhH7VdJaBRBFG0X3ED04EEvHiReAhLS3ZMEFXJSRBQ3chcjLkEMijcD8SaBKEbjVLUI8aAiwaMoXjIiImJcQY1d1TIajQqCC/FiJI7v19ToTHVNZJwFBB88Zqq66v1Xv6r+9Dj/NFoH0nOcTGaabtYOLcdG53pMHADf+1w8TrBoS02MUGCfiU6Pi3c+l5l8ekw+BDdVxQil2uXhfgQaMwPHyMR9ZGVjRYzU9YnZWNU+j8s31mBTENsz7CbFBi1VGuoHn8zCSjoQ/LVNvBTCyF2PReu19NSgwNjfPeCoTawsMnknweU6HaoQasU82oW9e2mdXEEiI7ddLtbq0I6TYOF27HHaNri6FLewNaucJibq0ZD2QdUhFvwdPO0FzxepLGB/rsBEqjZGRMrl0QoVOAdlgMmj+todxsDx+MQyycQrVTFtyBnQTcflz5YgRecx6YdVrBQy+ZUWRVVUy8dhGsgBhaSFCopV+E/Mmr/oBS+WarnisBlQNSGQbW2DmRl+UuzA87exIEWI7D1A4NXqRyuQm7VkcdgMuFzuVGJM3oCBRgguwKp6Me6bGfAXmfyAjLU73ZnpPg+30r7j0E029ss6LWuHzQDaI7/FxSSEA7o2JIbv14zAE2SuYSC9sImFDdkblfeci1Na1g7TgJ8MlxUKaDLxCek92NqdmkllFUZCMkO1hMypu407bs5DX1pLW4CfTQgPYdAJ3YP0i72mSD4x9ikZoPNBZjC/A6v8aBubYzOLlmv5QlBqIaCum8fC3dSHbCRNATvFPVqd/ZnBpNimAprAw3GYaKd9wveb1If21YLJlSCTh1RAE3hwHau4jE86dD3Uh/ajmEC5ZLJPBTRB95W2AEG/JPrTi6kPbVwfi0gZpK1WAW3AC8gZOni6WRUDyMAFLR+HF4zNy3+JpMOIAnQERk7SRLgfxmfxAmSSic/gEHgO7eMeD7ugsUbL/x2orNJLJoQuwcxELChdQxQjvD03UyXU06oDqoYImK12dIVxwFaeHZmvH9cGVICyt0d06q7aQ/03/I+y4Dg/ARNtknf9NSHVAAAAAElFTkSuQmCC">
-                        <span class="menu-collapsed">Etude & Formation</span>
+                        <span class="menu-collapsed dots" title="Education & Formation">Education & Formation</span>
                         <span class="submenu-icon ml-auto"></span>
                     </div>
                 </a>
@@ -90,14 +90,14 @@ else
                 <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOWSURBVFhH7VZpT1NBFK1f/Et+139DAMNm2ASj4tKHFKIJitLX0oddoK+lyBooUBZrK1RkXyVgZJEtsSJF4Th32ves5YEIJfqBm5xO5s6de07vzJ1Wd2H/lZWmiNf0WSZXaboYfpQqQrgubgtZoiykVF+JhZyPFRc7LgsZ5ucPc0zhQsl2kN3tRKbfBRpvsjn5SzNMldDhUmxLck3IEKtL7lrC2f0yMgOuQ8gakEHr+kxTRWxL8kxINV7V54hhx3gPXDN9Kqlpogs5QfcvEX0yynItB3Q0yYAh3XRguuMUdQI7cyrzs7FOTC2PqITBxSEMLYV+E1Ek2eEWvUiGffsa4SJ0+nRjOKfLiWxGNLs8iu6FAIoHX3FiEhAvguKeFFiB77tnwv7uDnzya14JHX3QhSOCgkEPfAtBrK9PIbI1r+LlZE+0CiyuPKuGyd8+NbaWPkJ6IMP52BMVQK1G30wpswKlAqH4CnhZBfJrNROfBGP9w6jMlRBs6cXe5nxMALsD1HqJAugOxJMTiiw2uI3tmsmPQ2R7Hc1sn3jbgU8TI9hjVSVEBbBHhvo8sQVrWdnjyakLyvMt+DQ1r0lyFJan5/Gi2I42cyt21mZUclUAb8UM8Rn1OfV7vAgFJE64XwtJ78bBzpYmUSIoLtDs5yWf6Av8RnxIAL1w+kxzRekN816RZMMNuhPswtFIrWfIs6DF0gqrIKOuohHhtRVNUgXh1RUW5+HxmwsTmuQEVYBi5HBVNbJWk1CebcbjPAkNxmYsjrzjGyIbc+iVvXiaV4u50KQm+dzgOF+nOIpPJI2HpgCtQAXhlRmM9vix8C6EqkIrvNYu/PiywYlppDn5P4SG+E3/sjytmUfBXwkY8/nxNP8lOqR2Pqfk7spGmO/V421bEOaSej4nf2RzDu01bTx+lO1LzKXgRALWZkbhMLhRU1KHxffRo4jHuO8NWsQWPiauLY0Mo4YJdJS5sMryJK4fK2Dn8yx8dZ3qw7H7h/M8CnQPaD/l6XF08rzK2pECpv1BfpavqprY0zmpbjgLKA/lo7yUn3yaAuQnHhhv2dltHjqUJBmgvJRf/S2IN3IMNHTj2/rpyn1SUH7i0RQw2NaHQJOPBz4vsvHxvHyaAt64mtFrd2Nr0ouqAgsfX9c1oNeWRF99A/qdTYcFGNJM+yvDHTzovEE8hjRxP0YdNetDu4c5k/a/7zgQj3TPWh+jvrAL+1em0/0ECQ+c6xR87UcAAAAASUVORK5CYII=">
-                        <span class="menu-collapsed">Messagerie</span>
+                        <span class="menu-collapsed dots" title="Messagerie">Messagerie</span>
                         <span class="submenu-icon ml-auto"></span>
                     </div>
                 </a>
                 <!-- Submenu Messagerie -->
                 <div id='submenu2' class="collapse sidebar-submenu">
                     <a href="#" data-target-container="zimbraHolder" class="list-group-item list-group-item-action bg-dark text-white">
-                        <span class="menu-collapsed">Zimbra</span>
+                        <span class="menu-collapsed">service</span>
                     </a>
                     <a href="#" data-target-container="supportHolder" class="list-group-item list-group-item-action bg-dark text-white">
                         <span class="menu-collapsed">Support</span>
@@ -107,7 +107,7 @@ else
                 <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALASURBVFhH7Zc9aBRBGIYX/9BGMbndMxr/QPwDewsb0eBfq4WCKAqCgo1NrFzIzVyOgJUkGtCb3cQLmEKxsFALAyKpbFQQBVFRE7CIOVQQROPz7U0Cya7e6WUDwr3wMnMz3877znyzN7POJNxQ7XEDdc8zuuwFeiIVGj0Cw+arHZusbAU0XvCM+omBkmvUIS/M7U6DmaI64QZ6GI0vXlG3ReIy80gc4aghbfj+PCbczYp8ain5GWav7uLquu2eE6w1/mJW+zVsd7xAjWPgoO2bM6B52TX6Jgb0RMaoA7bdWRF2bKmsivpIOTZLfIfOtaZ+f6mVkYl3koqH0w0MDs5H+BX74bYX5A7LvpgVhvljCD7HSDHSAYkGMmF+o/xuCtSq1hsXl4gJAk/Vw0yg9snYGDmO4IjUBfTFDXjFjm3ye3lvYRllFwHlaEXqIGN8zxTz+3ntjiA6HqmDqgZ4uMSS9UTRdYCZv2XDnW4YaBhoGGgY+A8NGKUx8Q0TSadb7Qz0D4R21WTA7ctvkN8tYWGN88Bf4Jr8Xowkn3A1EhPbZeys0ScRfC91QaIBuS5xSXjGQ0Nc1c4QlHjC/TXD3DnS8AbBS5EOoD3BAMiaznWYGMDEC1IQP90CNSrLOqPtg4xDXa5Z0+Ir1E/o75Ij3sr83kA1SCwPT+VS4Ia5HTKO7B3bVBU1G1hZzK0m+M7kbKhXXQHqL8n/Fae3d6EdJoaaDdBv4GMeSM5vAknhWQb/zCY+aoeJgThrgG+CPxogSEz+CzFy3g4TQ8WAGpLKqFwabXsM2UDvnPlq1cpmozfbYWIgVSWhzDBklw7Ljdj2pY6m/kIruuVo4uISA19p6JYvFhuTGuTGTXoeyas5tUn5m2wjH2Oyiyl7MFNIg6Sln7JM+TTbl1sfiU9CPhQx0A5vsXnup8QBWfatg/6iiqrj/AKwzzkT7NtrvQAAAABJRU5ErkJggg==">
-                        <span class="menu-collapsed">Système d'information</span>
+                        <span class="menu-collapsed dots" title="Système d'information">Système d'information</span>
                         <span class="submenu-icon ml-auto"></span>
                     </div>
                 </a>
@@ -124,17 +124,17 @@ else
                 <a href="#submenu4" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANRSURBVFhH1VdbSxVRFJ4uREVR0QW6PBQEQUFBoh1n72F6ELSz92iWB4oe6qULVARFZRBF9BhEEARG1EMZRQ89KL70F7qAKEKU4mVmzjmKYKVRmqdvbZeYoXZ0jgN9sJiZtfbs9e211r5Zc0G23NnoayGDpDgUauGFyinJpNwVbJ4f9FbaK0MlrkHeB1qOhlrmAiW/hEoO0TuePwIt3qQ9eTR301rIvxUGvpIn4aAPDn08bwe6tLjDdZey2eqoclcHyk4iGnWGkBKtaU8k2Dx35FKpRYESTzDin+i8tqsmsYxN0wKR2gSi9fRPoO0zrJ49cpa1AKF9BsfZtLZLWZ038N9ZEPkVes4JVs0OGPklhHMwTMp9rJo1xkiIEV87e1mVH8IqdysK6hucn2fVnIF6eA15l3Pdxaz6N5C/eyDQXIhq7q5wt3ANeayaGVTdaNwfqYD+Avp7hVQ08OfMoOlj5nV16QZWRQZq6QillGYVq6YH5R056+LPgiDjJbabQXliF6umhq9ENS0ktNKB8XVWRwLVEfps4pXTx7TcxqYJ+LpoOZzeN0srVjO8X4QMsDkS0GcROae9A88PFF3IOTZPMESRtKNxBgRqw6Sj6CduEgnsONdfVrYKUW2ErzbIIOSKaZD2nCp8DPHcb553Alo88JV9jHz62l2HOS8aMfJH1DguAhR1vH8OtXOZltwO2u2ocVwESA+/zyGPaY4OpZVdaZQxEkAh3oXvJlp2P8FwmpTxRkC+xPtDs1ng44VRxlUD2Jjw7Dabna+cchiGcZTaHRcBDPgU8v+VTlLm4AFFPQxZSP98E6CiR+7p/GjSbtCS2rkEtXAD6eg1ZJS4hUZ9bI6EjBJ7iMDYMi9aSeCjhs2TAVYHKDR4DlOYWB0ZiOpTIoFBtdGRntVTgw6edATnz4KgSyU2jxFwSlgVLxDV47Te5HOqzgvmkkKFqmRqXHoq7R1snoSgQq5HOn2koY5V0UBXMNTIR3T4nWcNjm9yAKMcCbRzuFPJNSREiI51INcJAi00C7iLaEAV74fDURoZqwxAoMHk+U/BrAKBOwWtqZ6DxWvRKa5poh1O3hox90UxTLsbRltEQtt7we+I46DO00pcCJPi6rgESVnB5v8JlvUbGcpdvMMPeyIAAAAASUVORK5CYII=">
-                        <span class="menu-collapsed">Cloud et Fichiers</span>
+                        <span class="menu-collapsed" title="Cloud et Stockage">Cloud et Stockage</span>
                         <span class="submenu-icon ml-auto"></span>
                     </div>
                 </a>
                 <!-- Submenu Service aux étudiants -->
                 <div id='submenu4' class="collapse sidebar-submenu">
                     <a href="#" data-target-container="cloudHolder" class="list-group-item list-group-item-action bg-dark text-white">
-                        <span class="menu-collapsed">Cloud</span>
+                        <span class="menu-collapsed dots">Cloud local</span>
                     </a>
-                    <a href="#" data-target-container="service2Holder" class="list-group-item list-group-item-action bg-dark text-white">
-                        <span class="menu-collapsed">Service2</span>
+                    <a href="#" id="office365" data-target-container="service2Holder" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Cloud Office 365</span>
                     </a>
                 </div>
             </ul><!-- List Group END-->
@@ -143,7 +143,7 @@ else
         <!-- MAIN -->
         <div id="main_container" class="col">
             <div id="mainHolder" class="container-fluid holder visible text-center">
-                <h1 id="welcome">Bienvenue au Numérique Educatif</h1>
+                <h1 id="welcome">Bienvenu(e) sur l'intranet de l'IUC</h1>
             </div>
             <!-- FIRST CAT (Etude & Formation) - 16:9 aspect ratio -->
             <div id="ciscoHolder" class="embed-responsive embed-responsive-16by9 holder">

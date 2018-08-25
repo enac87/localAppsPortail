@@ -27,12 +27,16 @@
 
     $('.sidebar-submenu > a').click(function() {
 
-      //< First make all Iframe Holders not visible by removing the visible class
-      $('.holder').removeClass('visible');
+      if($(this).attr("id") === "office365"){
+        window.open('https://portal.office.com/?realm=testons.net', '_blank');
+      } else {
+        //< First make all Iframe Holders not visible by removing the visible class
+        $('.holder').removeClass('visible');
 
-      //Make the Iframe Holder of the selected item visible
-      var target = $(this).attr("data-target-container");
-      $('#' + target).addClass('visible');
+        //Make the Iframe Holder of the selected item visible
+        var target = $(this).attr("data-target-container");
+        $('#' + target).addClass('visible');
+      }
     });
   });
 } )( jQuery );

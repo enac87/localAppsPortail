@@ -24,7 +24,8 @@
 
 .selected_item {
     animation: blinker 4s linear infinite !important;
-    background: #b7750a33 !important;
+    /* background-color: #b7750a33 !important; */
+    background-color: #318ff573 !important;
 }
 
 @keyframes blinker {
@@ -175,4 +176,12 @@
   background-color : rgba(0,0,0,0.3);
   font-size: 16px;
   color : white;
+}
+
+.dots { 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 160px;
+  height: 1.2em;
+  white-space: nowrap;
 }
