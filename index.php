@@ -22,15 +22,24 @@
 
     <!-- Bootstrap NavBar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-      <a  id="logo" class="navbar-brand" href="index.php">Accueil</a>
-      <a href="#" data-toggle="sidebar-colapse">
+      <a href="#" data-toggle="sidebar-colapse" class="sidebar-toggle">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABdSURBVFhHYxgFo+D///8uA4X//ftnAnLAgAGgAw4PvAOAxLsBxNugKWEUjIKRDIBZYfcA4v7RkhAUBeUDiKOhKWEUjIIBBMDcYDxQGJgL1EcLooF3wCgYBQMLGBgAFiKqUTgye98AAAAASUVORK5CYII=">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a  id="logo" class="navbar-brand" href="index.php">Accueil</a>
 
-      <div id="dateHolder" class="text-center">
+        <div class="list-group-item d-flex align-items-center menu-collapsed" style="margin-left : 124px; padding : 0px; border : none; background-color:transparent">
+            <span style="float: left; min-width: 50%; cursor: pointer;">     
+                <button id="previous" type="button" class="nav-button btn btn-clear btn-icon"><i class="fa fa-arrow-left"></i></button>
+            </span>
+            <span style="float: left; min-width: 50%; cursor: pointer;">     
+                <button id="refresh" type="button" class="nav-button btn btn-clear btn-icon"><i class="fa fa-refresh"></i></button>
+            </span>
+            <span style="min-width: 50%; cursor: pointer;">
+                <button id="forward" type="button" class="nav-button btn btn-clear btn-icon"><i class="fa fa-arrow-right"></i></button>
+            </span>
+        </div>
+
+      <div id="dateHolder" class="text-center hidden-xs-down">
         <?= date("F j"); ?> | <span id="date_day"></span>
       </div>
 <?php
@@ -42,7 +51,7 @@ if (!isset($_SERVER['PHP_AUTH_USER']))
 }
 else
 {?>
-      <span id='user_welcome'>Salut !&nbsp;&nbsp; <?php echo $_SERVER['PHP_AUTH_USER']; ?></span>
+      <span id='user_welcome' class="hidden-xs-down">Salut !&nbsp;&nbsp; <?php echo $_SERVER['PHP_AUTH_USER']; ?></span>
 <?php } ?>
 
     </nav><!-- NavBar END -->
@@ -55,14 +64,7 @@ else
             <!-- Bootstrap List Group -->
             <ul class="list-group">
                 <!-- Separator with title -->
-                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed" style="margin: 10px 0 10px 0;">
-                  <span id="previous" style="float: left; min-width: 50%; cursor: pointer;">
-                    <img id="prev" style="cursor: pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI3SURBVFhH7ZW9SxxBGMYvGtAqysHhfpyIMX4gEhDSGkiTJimuyd9gI6SMjRxpo40o4u6MMWB3ECQRDu92lkMLIQjaWKQIqQQhTVQslHiez+y9p7I36q3ZTBN/8MJ+zPs+z868M5u45y6YgmfoUi9dpcVWS3AHBvbpkT7s4sdeCG/DQEW7AdvnbyzBDqS4VgNP8tMtlsdnasJaDXQU3G589WZYXIsBCGRMj/1WiQfhscP0KksmcrlmSomJUvYhhCchcKYUVoXH9hBrpsenLM99LXcKVYtGWnyysd7rSpFIETSrAzN9VPp2TJ+/ROKv+mJ/ER7/Ixs4mV96RDJqbMFGkVCuKxBTYGl+wMgwydUjHWJQTpUcW6BpDZ8/J0k1pmBj6P5jZYEYQm5dc9UZIDk1RpE/w+Cf4eS4Ajvs+2PPaSM5NdhG7XC7oipQCzlTmLEPaFwX959xvYXro/A4dTCXpG6gUnkAkXdBJyuKyOmkkZcgxxALg3j3FobE9WcJO0XjP6WsmzGFO4Jp2w0XURoI0enP92DcnOoj8HyFht2OkV9I4WsKoQIN/wssn/djl327mo8oY1d00ZAGyGabYGJCTl9UAwE44pHPr5qAqff0tnFswV+g0F5kA5JqX81dGEDj0ptopEqLBkws02008PeE8EZgAk0ql5feRARfQ1eR6SjwIZg4kSbsIn9Fj/WC9Z+t9gEbp0d6kedFtRcaOZT+ETgfdjADX+hWP5gBB0vxlW7v+W9JJM4BtXHc8RDsdk0AAAAASUVORK5CYII=">
-                  </span>
-                  <span id="forward" style="min-width: 50%; cursor: pointer;">
-                    <img id="forw" style="cursor: pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI9SURBVFhH7Za7axRBHMdXEk0IARsvt7MrEcRHkHSxTKNFCv0LRIOPUgJWWtgEUlkqEXFv5rwUFrKEFCkO72b3FoTYKFhYaJMuIAQfiCiKJud3Lj+92+zc3m1us9V94EvIzO81j9/sGX3SwPLFabMqztK/2cNkcZp54ifz+BwNZYsqwPJEXQmFPMsFD0dpKhtaCyC9y1fEJE3vP5oClL5D18hkf2lTQENM8hJbdUbINH1OlB8M2T6/oEveFH/LnjsT5LJ3WOAcsSS/itteRNBXWN0XfUKNpPjGpLhMoZJh+4XzcF5FkN/a4MnkHAtKwxQ6HksWTmHFFU2QnoRWfWNXn5ykNHpMX8yqbdMFSEf8K6vxKUoXBmd8Byvf1jumIf4Hu3DXqNcPUMompsev6J1SkuQfbE+co3Rh1AcFRuoB0Tv3KHRNLReUTEoXZuq1cxAG73WOu4WO+AytqXcffx9jS5/q7Fq0BdsFw3UHKF0UGNzSODaEO/ELSZZxKW8w6YyTy3/iXkL4bTJfzJCpHvVUooBPEeedLpjPVx6NkamWtgVI8eKot2STWXssn1+POvOVMY/nySSWSAGqgyS/ZwTzg2QSD7b4ZdhZ3KaprmgtALE+2lVxkaY6Y5aLOThuNQsQN2mqa5oFqO9D9I7EwvzCpX/J1Y2m4UQ0CpBiUX0Zaah7sOX3d5LzjePSOUzDyYhrr05g1b4qQL39NJQtOLd11atnXPcQDWWL6vW9nn0q4Ox/4Aiy+fHYp08Ew/gLElzmCdR7tbMAAAAASUVORK5CYII=">
-                  </span>
-                </li>
+                
                 <!-- /END Separator -->
                 <!-- Etude & Formation -->
                 <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
@@ -122,14 +124,14 @@ else
                 <a href="#submenu4" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANRSURBVFhH1VdbSxVRFJ4uREVR0QW6PBQEQUFBoh1n72F6ELSz92iWB4oe6qULVARFZRBF9BhEEARG1EMZRQ89KL70F7qAKEKU4mVmzjmKYKVRmqdvbZeYoXZ0jgN9sJiZtfbs9e211r5Zc0G23NnoayGDpDgUauGFyinJpNwVbJ4f9FbaK0MlrkHeB1qOhlrmAiW/hEoO0TuePwIt3qQ9eTR301rIvxUGvpIn4aAPDn08bwe6tLjDdZey2eqoclcHyk4iGnWGkBKtaU8k2Dx35FKpRYESTzDin+i8tqsmsYxN0wKR2gSi9fRPoO0zrJ49cpa1AKF9BsfZtLZLWZ038N9ZEPkVes4JVs0OGPklhHMwTMp9rJo1xkiIEV87e1mVH8IqdysK6hucn2fVnIF6eA15l3Pdxaz6N5C/eyDQXIhq7q5wt3ANeayaGVTdaNwfqYD+Avp7hVQ08OfMoOlj5nV16QZWRQZq6QillGYVq6YH5R056+LPgiDjJbabQXliF6umhq9ENS0ktNKB8XVWRwLVEfps4pXTx7TcxqYJ+LpoOZzeN0srVjO8X4QMsDkS0GcROae9A88PFF3IOTZPMESRtKNxBgRqw6Sj6CduEgnsONdfVrYKUW2ErzbIIOSKaZD2nCp8DPHcb553Alo88JV9jHz62l2HOS8aMfJH1DguAhR1vH8OtXOZltwO2u2ocVwESA+/zyGPaY4OpZVdaZQxEkAh3oXvJlp2P8FwmpTxRkC+xPtDs1ng44VRxlUD2Jjw7Dabna+cchiGcZTaHRcBDPgU8v+VTlLm4AFFPQxZSP98E6CiR+7p/GjSbtCS2rkEtXAD6eg1ZJS4hUZ9bI6EjBJ7iMDYMi9aSeCjhs2TAVYHKDR4DlOYWB0ZiOpTIoFBtdGRntVTgw6edATnz4KgSyU2jxFwSlgVLxDV47Te5HOqzgvmkkKFqmRqXHoq7R1snoSgQq5HOn2koY5V0UBXMNTIR3T4nWcNjm9yAKMcCbRzuFPJNSREiI51INcJAi00C7iLaEAV74fDURoZqwxAoMHk+U/BrAKBOwWtqZ6DxWvRKa5poh1O3hox90UxTLsbRltEQtt7we+I46DO00pcCJPi6rgESVnB5v8JlvUbGcpdvMMPeyIAAAAASUVORK5CYII=">
-                        <span class="menu-collapsed">Service aux étudiants</span>
+                        <span class="menu-collapsed">Cloud et Fichiers</span>
                         <span class="submenu-icon ml-auto"></span>
                     </div>
                 </a>
                 <!-- Submenu Service aux étudiants -->
                 <div id='submenu4' class="collapse sidebar-submenu">
-                    <a href="#" data-target-container="service1Holder" class="list-group-item list-group-item-action bg-dark text-white">
-                        <span class="menu-collapsed">Service1</span>
+                    <a href="#" data-target-container="cloudHolder" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Cloud</span>
                     </a>
                     <a href="#" data-target-container="service2Holder" class="list-group-item list-group-item-action bg-dark text-white">
                         <span class="menu-collapsed">Service2</span>
@@ -168,8 +170,8 @@ else
               <iframe name="morpheusFrame" id="morpheusFrame" class="embed-responsive-item" src="http://support.myiuc.lan"></iframe>
             </div>
             <!-- FOURTH CAT (Service aux Etudiants) - 16:9 aspect ratio -->
-            <div id="service1Holder" class="embed-responsive embed-responsive-16by9 holder">
-              <iframe name="service1Frame" id="service1Frame" class="embed-responsive-item" src="http://support.myiuc.lan"></iframe>
+            <div id="cloudHolder" class="embed-responsive embed-responsive-16by9 holder">
+              <iframe name="cloudFrame" id="cloudFrame" class="embed-responsive-item" src="https://web.testons.net"></iframe>
             </div>
             <div id="service2Holder" class="embed-responsive embed-responsive-16by9 holder">
               <iframe name="service2Frame" id="service2Frame" class="embed-responsive-item" src="http://support.myiuc.lan"></iframe>

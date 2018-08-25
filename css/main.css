@@ -5,9 +5,13 @@
 #sidebar-container {
     min-height: 100vh;
     height: 100%;
-    margin-top: 55px;
     background-color: #333;
     padding: 0;
+    overflow: auto;
+}
+
+#sidebar-container>.list-group {
+  padding-top: 65px;
 }
 
 #main_container {
@@ -50,6 +54,7 @@
 .holder{
   position: absolute;
   top: 55px;
+  bottom : 0;
   visibility: hidden;
   z-index: -1;
 }
@@ -146,4 +151,28 @@
   display: inline;
   text-align: right;
   padding-left: 10px;
+}
+
+/* */
+.navbar {
+  line-height: 1 !important;
+}
+.sidebar-toggle {
+  font-size: 42px;
+  margin-right: 24px;
+}
+
+.sidebar-toggle img,
+.list-group img {
+  width: 24px;
+}
+
+.sidebar-toggle img {
+  margin-top: -12px
+}
+
+.nav-button {
+  background-color : rgba(0,0,0,0.3);
+  font-size: 16px;
+  color : white;
 }

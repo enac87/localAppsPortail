@@ -18,6 +18,13 @@
         window.history.forward();
     });
 
+    $('#refresh').click(function(){
+        var iframe = $('.holder.visible iframe.embed-responsive-item')[0];
+        var href = iframe.contentWindow.location.href;
+        iframe.contentWindow.location.href = null;
+        iframe.contentWindow.location.href = href;
+    });
+
     $('.sidebar-submenu > a').click(function() {
 
       //< First make all Iframe Holders not visible by removing the visible class
